@@ -1,4 +1,5 @@
-#OPenssl self signed certificates
+# OPenssl self signed certificates
+```
 You can generate your own self-signed certificates using OpenSSL if you don’t have access to a certificate authority (CA) for your organization and want to use Open Distro for Elasticsearch for non-demo purposes¹. Here are the steps to generate a self-signed certificate for the root CA using OpenSSL:
 1. Generate a private key for the root CA:
 ```
