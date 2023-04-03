@@ -12,5 +12,24 @@ openssl genrsa -out root-ca-key.pem 2048
 openssl req -new -x509 -sha256 -key root-ca-key.pem -out root-ca.pem
 ```
 The `-x509` option specifies that you want a self-signed certificate rather than a certificate request.
-The `-sha256` option sets the hash algorithm to SHA-256¹.
+The `-sha256` option sets the hash algorithm to SHA-256.
 
+### Create a config file 
+To create a configuration file for OpenSSL certificate, you can create a new, empty folder and create a file named localhost.cnf.
+Copy all of the following text into the file and save it:
+```
+[req]
+default_bits = 2048
+prompt = no
+default_md = sha256
+distinguished_name = dn
+
+[dn]
+C=US
+ST=CA
+L=SanFrancisco
+O=MyCompany
+OU=MyDivision
+CN=localhost
+emailAddress=webmaster@localhost.com
+```
