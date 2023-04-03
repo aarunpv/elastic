@@ -1,5 +1,5 @@
 # Openssl self signed certificates
-```
+
 ## Openssl to create CA
 ```
 You can generate your own self-signed certificates using OpenSSL if you don’t have access to a certificate authority (CA) 
