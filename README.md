@@ -14,6 +14,3 @@ openssl req -new -x509 -sha256 -key root-ca-key.pem -out root-ca.pem
 The `-x509` option specifies that you want a self-signed certificate rather than a certificate request.
 The `-sha256` option sets the hash algorithm to SHA-256¹.
 
-```
-hello world
-```
